@@ -1,0 +1,15 @@
+interface:
+  display_name: "Z-Library Downloader"
+  short_description: "Search and download Chinese books from Z-Library as PDF"
+  default_prompt: "Use $zlibrary-downloader to download a book from Z-Library"
+compatibility:
+  canonical_format: "agent-skills"
+  adapter_targets:
+    - "claude"
+  execution:
+    context: "inline"
+    shell: "bash"
+  trust:
+    source_tier: "local"
+    remote_inline_execution: "forbid"
+    remote_metadata_policy: "allow-metadata-only"
